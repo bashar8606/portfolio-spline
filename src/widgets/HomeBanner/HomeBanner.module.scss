@@ -1,0 +1,49 @@
+@import '../../style/variable.scss';
+
+
+.section {
+    --pt:180px;
+    min-height: 100vh;
+}
+
+
+.title {
+    font-size: size(140);
+    font-weight: 300;
+
+    &_toggle {
+        background: linear-gradient(90deg, #06F 0%, #FFDDB7 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-weight: 500;
+    }
+}
+
+.line {
+    --bs-aspect-ratio: 15%;
+    bottom: 10px;
+    &_round {
+        --size: 90px;
+        width: var(--size);
+        height: var(--size);
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;width: 100%;height: 100%;
+            border-radius: 50%;
+            background-color: #fff;
+            z-index: 2;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;width: 100%;height: 100%;
+            border-radius: 50%;
+            background-image: linear-gradient(180deg, #06F 0%, #FFDDB7 100%);
+opacity: 0.6;
+filter: blur(10px);
+        }
+    }
+}

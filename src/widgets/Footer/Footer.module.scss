@@ -1,0 +1,130 @@
+@import '../../style/variable.scss';
+
+.footer {
+    address {
+        color: #DADADA;
+        font-size: 14px;
+        line-height: 1.66;
+        letter-spacing: 0.18px;
+
+        @include lg {
+            font-size: 1rem;
+        }
+    }
+
+    &_top {
+        padding: 30px 0 20px;
+        border-bottom: 1px solid #252525;
+
+        @include lg {
+            padding: size(50) 0 size(30);
+        }
+
+        .footer_col {
+            @include lg {
+                border-right: 1px solid #252525;
+            }
+            &:first-of-type {
+                .footer_spec{
+                    margin-left: 0;
+                }
+            }
+        &:last-of-type {
+            border-right: none;
+        }
+        }
+    }
+
+
+    &_spec {
+        max-width: 350px;
+        @include lg {
+            margin: auto;
+        }
+
+        &__title {}
+
+        p {
+            color: #DADADA;
+            font-size: 14px;
+            font-weight: 300;
+
+            @include lg {
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+    &_credit {
+        border-top: 1px solid #252525;
+        padding: 15px 0;
+
+        @include lg {
+            padding: size(30) 0;
+        }
+
+        p {
+            color: #DADADA;
+            line-height: 1;
+            font-size: 13px;
+
+            @include lg {
+                font-size: size(15);
+            }
+
+            a {
+                color: #DADADA;
+                transition: 0.3s all ease;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .title {
+        font-size: 16px;
+
+        @include lg {
+            font-size: size(20);
+        }
+    }
+
+    .nav {
+        &_link {
+            color: #DADADA;
+            font-size: 14px;
+            transition: 0.3s all ease;
+            display: block;
+            padding: 5px 0;
+
+            @include lg {
+                font-size: 1rem;
+                padding: size(5) 0;
+            }
+
+            span {
+                font-size: 17px;
+                margin-right: 10px;
+
+                @include lg {
+                    margin-right: size(20);
+                    font-size: size(28);
+                }
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &_nav {
+        ul {
+            list-style: none;
+
+        }
+    }
+}
