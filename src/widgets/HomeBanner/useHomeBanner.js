@@ -18,6 +18,7 @@ export const useHomeBanner = ({ style }) => {
         "(min-width: 992px)": function () {
           const line = self.selector(`.${style.line}`);
           const line_round = self.selector(`.${style.line_round}`);
+          const line_path = self.selector(`.${style.line_path}`);
 
           const tl = gsap.timeline({
             scrollTrigger: {
@@ -32,6 +33,8 @@ export const useHomeBanner = ({ style }) => {
           });
 
           tl.to(line_round, {scale: 4})
+          tl.to(line_path, {scaleX: 2,scaleY:0.7},"<")
+          tl.to(line_path, {autoAlpha:0, duration: 0.5},"<")
         },
         // small
         "(max-width: 991.98px)": function () {

@@ -28,7 +28,7 @@ export const useHomeAbout = ({ style }) => {
           });
 
           tl.to(main.current, {clipPath: `circle(100%)`})
-          tl.to(main.current, {'--bg': `#000`})
+          tl.to(main.current, {'--bg': `#000`,'--color':'#fff'})
         },
         // small
         "(max-width: 991.98px)": function () {

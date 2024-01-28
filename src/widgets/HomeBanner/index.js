@@ -26,7 +26,9 @@ const HomeBanner = ({ data }) => {
 					<div>
 						<div className={`${style.line_round} rounded-circle bg-white position-absolute z-3  start-50 top-50`}></div>
 					</div>
+					<div className={style.line_path}>
 					<Image src={`/assets/images/lines.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
 				</div>
 			</div>
 		</section>

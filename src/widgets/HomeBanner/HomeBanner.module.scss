@@ -24,6 +24,9 @@
 .line {
     --bs-aspect-ratio: 15%;
     position: relative;
+    &_path {
+        display: block;
+    }
     &_round {
         --size: 90px;
         width: var(--size);

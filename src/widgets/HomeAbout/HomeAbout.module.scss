@@ -3,7 +3,9 @@
 
 .section {
     --bg:white;
+    --color:rgb(29, 29, 29);
     min-height: 100vh;
     background-color: var(--bg);
+    color: var(--color);
     clip-path: circle(45px);
 }
