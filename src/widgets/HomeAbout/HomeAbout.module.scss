@@ -1,0 +1,9 @@
+@import '../../style/variable.scss';
+
+
+.section {
+    --bg:white;
+    min-height: 100vh;
+    background-color: var(--bg);
+    clip-path: circle(45px);
+}

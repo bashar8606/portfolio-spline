@@ -23,11 +23,12 @@
 
 .line {
     --bs-aspect-ratio: 15%;
-    bottom: 10px;
+    position: relative;
     &_round {
         --size: 90px;
         width: var(--size);
         height: var(--size);
+        transform: translate(-50%, -50%) ;
         &::after {
             content: '';
             position: absolute;
