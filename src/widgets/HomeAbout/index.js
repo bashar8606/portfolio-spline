@@ -8,9 +8,12 @@ const HomeAbout = ({ data }) => {
 
 	return (
 		<section className={`${style.section} sec-padding d-flex align-items-center `} ref={main}>
+			<div className={`ratio ${style.portrait}`}>
+				<Image src={`/assets/images/portrait.png`} fill className="object-fit-cover" alt="logo icon" />
+			</div>
 			<div className="container">
 
-			fgdgfdgf
+				fgdgfdgf
 			</div>
 		</section>
 	);

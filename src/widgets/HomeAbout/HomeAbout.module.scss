@@ -4,8 +4,20 @@
 .section {
     --bg:white;
     --color:rgb(29, 29, 29);
+    position: relative;
     min-height: 100vh;
     background-color: var(--bg);
     color: var(--color);
     clip-path: circle(45px);
+}
+
+
+.portrait {
+    position: absolute;
+    --bs-aspect-ratio:115.3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    bottom: 0;
+    z-index: 3;
 }
