@@ -3,7 +3,7 @@ import { RecoilRoot } from "recoil";
 
 const GlobalProviders = ({ children }) => {
   return (
-    <RecoilRoot>{children}</RecoilRoot>
+    <RecoilRoot>{children}</RecoilRoot> 
   );
 }; 
 
