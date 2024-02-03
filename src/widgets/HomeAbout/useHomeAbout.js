@@ -16,7 +16,7 @@ export const useHomeAbout = ({ style }) => {
 
 
           gsap.set(main.current,{clipPath: `circle(0%)`})
-          gsap.set(portrait,{yPercent: 20, scale:.8})
+          gsap.set(portrait,{yPercent: 20, scale:.8, filter: `brightness(1) contrast(1)`})
 
           const tl = gsap.timeline({
             scrollTrigger: {
@@ -32,6 +32,7 @@ export const useHomeAbout = ({ style }) => {
           tl.to(portrait, {yPercent: 0, scale:1})
           tl.to(main.current, {clipPath: `circle(100%)`},"<")
           tl.to(main.current, {'--bg': `#000`,'--color':'#fff', duration:.3})
+          tl.to(portrait, {filter: `brightness(0.8) contrast(1.2)`, duration:.3},"<")
         },
         // small
         "(max-width: 991.98px)": function () {

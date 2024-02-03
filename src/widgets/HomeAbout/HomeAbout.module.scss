@@ -21,3 +21,16 @@
     bottom: 0;
     z-index: 3;
 }
+
+.grad {
+    position: absolute;
+    background-image: linear-gradient(180deg, #06F 0%, #FFDDB7 100%);
+    border-radius: 50%;
+    width: 51%;
+    transform: translateX(-50%) rotate(112deg);
+    left: 50%;
+    margin: auto;
+    bottom: -70%;
+    filter: blur(20px);
+    opacity: 0.6;
+}
