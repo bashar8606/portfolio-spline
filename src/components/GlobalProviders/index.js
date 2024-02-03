@@ -5,6 +5,6 @@ const GlobalProviders = ({ children }) => {
   return (
     <RecoilRoot>{children}</RecoilRoot>
   );
-};
+}; 
 
 export default GlobalProviders;
