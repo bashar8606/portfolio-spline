@@ -1,0 +1,196 @@
+@import '../../style/variable.scss';
+
+
+.section {
+    background-image: linear-gradient(180deg, #EEF8F7 0%, #E8F2FC 100%);
+    overflow: hidden;
+
+    @include lg {
+        min-height: 100vh;
+    }
+}
+
+.content {
+    @include lg {
+        opacity: 0;
+    }
+}
+
+.tab {
+    display: block;
+    --spacer: 4%;
+
+    &_card {
+        --bg: rgb(255 255 255 / 75%);
+        --t: 0%;
+        --l: 0%;
+        --min-width: 110px;
+        --max-width: 255px;
+        z-index: 22;
+
+        @include lg {
+            --max-width: #{size(310)};
+            --min-width: #{size(130)};
+
+        }
+
+        &_item {
+            background-color: var(--bg);
+            padding: 12px;
+            border-radius: 15px;
+            min-width: var(--min-width);
+            max-width: var(--max-width);
+            position: absolute;
+            top: var(--t);
+            left: var(--l);
+            backdrop-filter: blur(20px);
+            @include max(991.98) {
+                transform: scale(0.8);
+            }
+
+            @include lg {
+                padding: size(16);
+
+            }
+
+
+            h6 {
+                font-size: 12px;
+
+                @include lg {
+                    font-size: size(14);
+                }
+            }
+
+            p {
+                font-size: 10px;
+                color: #4D4D4D;
+
+                @include lg {
+                    font-size: size(12);
+                }
+            }
+
+            &__one {
+                --t: -10%;
+                --l: -2%;
+
+                @include lg {
+                    --t: 10%;
+                    --l: -4%;
+                }
+            }
+
+            &__two {
+                --t: -14%;
+                --l: 64%;
+
+                @include lg {
+                    --t: -10%;
+                    --l: 65%;
+                }
+            }
+
+            &__three {
+                --t: 85%;
+                --l: 18%;
+
+                @include lg {
+                    --t: 62%;
+                    --l: -28%;
+                }
+
+                .col_left {
+                    width: 30px;
+                    @include lg {
+                        width: size(50);
+                    }
+                }
+            }
+
+            &__four {
+                --t: 30%;
+                --l: 86%;
+                --bg: rgba(58, 106, 248, 0.822);
+                --min-width: 240px;
+
+                .progress {
+                    height: 4px;
+                }
+
+                .pf_sm {
+                    width: 20px;
+
+                    &:not(:first-of-type) {
+                        margin-left: -7px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_icon {
+        transform: scale(0.5);
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &_wrap {
+        will-change: transform;
+    }
+
+    &_screen {
+        --bs-aspect-ratio: 77.46%;
+        will-change: transform;
+
+        &__control {
+            width: calc(100% - 7%);
+            bottom: var(--spacer);
+            left: var(--spacer);
+
+            .item {
+                width: 20px;
+                margin-right: 10px;
+                background-color: #fff;
+                @include lg {
+                    width: size(33);
+                }
+
+                &:nth-of-type(3) {
+                    background: rgba(0, 0, 0, 0.40);
+                    backdrop-filter: blur(2px);
+                }
+
+                &:last-of-type {
+                    background-color: #FF453A;
+                }
+            }
+        }
+
+        &__frame {
+            will-change: transform;
+            display: block;
+        }
+
+        &__video {
+            will-change: transform;
+            display: block;
+
+            .video_sm {
+                width: 22%;
+            }
+
+            .video_wrap {
+                will-change: transform;
+                transform: scale(0.96);
+                border-radius: 50px;
+            }
+        }
+    }
+
+
+}
+
+.item {
+    will-change: transform;
+}

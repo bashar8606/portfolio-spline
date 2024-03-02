@@ -1,0 +1,64 @@
+@import '../../style/variable.scss';
+
+.section {}
+
+.card_wrap {}
+
+.col_main {
+    @include lg {
+        width: 44%;
+    }
+}
+
+.card_main {
+    --clip:5%;
+    --radius: 10px;
+    border-radius: var(--radius);
+    clip-path: inset(var(--clip) round var(--radius));
+    background-color: #FFB558;
+    min-height: 300px;
+    --bs-aspect-ratio: 77%;
+    @include lg {
+        --bs-aspect-ratio: 108%;
+        --radius: #{size(40)};
+    }
+
+    &_body {
+        padding: 30px 25px 40px;
+        
+        @include lg {
+            padding: size(70) size(40) size(40);
+
+        }
+    }
+
+    &_app {
+        --bs-aspect-ratio: 200%;
+        width: 48%;
+        bottom: -38%;
+        right: 5%;
+        @include lg {
+            width: 52%;
+        }
+    }
+    &_app1 {
+        --bs-aspect-ratio: 200%;
+        width: 116%;
+        bottom: 15%;
+        right: -24%;
+    }
+    &_app2 {
+        --bs-aspect-ratio: 80%;
+        width: 176%;
+        bottom: -22%;
+        left: -3%;
+    }
+}
+
+
+.title {
+    will-change: transform;
+    @include max(991.98) {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../style/variable.scss';
+
+.section {}
+
+.card_main {
+    &_app {
+        left: 10%;
+        top: 44%;
+    }
+
+    &_app1 {
+        bottom: 35%;
+        right: 7%;
+    }
+}
+
+
+.title {
+    will-change: transform;
+    &_sm {
+        @include max(991.98) {
+            font-size: 14px;
+        }
+    }
+}
+
+
+.card {
+    --clip:5%;
+    --radius: 10px;
+    border-radius: var(--radius);
+    clip-path: inset(var(--clip) round var(--radius));
+    background: #7AE5B9;
+    padding: 40px 20px;
+    @include lg {
+        --radius: #{size(40)};
+        padding: size(120) 0 size(120);
+    }
+
+    &_app {
+        --bs-aspect-ratio: 200%;
+        width: 17%;
+        transform: rotate(-14deg);
+    }
+}
