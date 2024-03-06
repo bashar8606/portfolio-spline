@@ -25,7 +25,6 @@ export const useHomeAbout = ({ style }) => {
               start:"top top",
               end:"200%",
               scrub: .5,
-              markers: true
             },
           });
 
