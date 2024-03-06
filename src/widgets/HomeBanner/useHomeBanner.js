@@ -28,7 +28,6 @@ export const useHomeBanner = ({ style }) => {
               end: "400%",
               scrub: .5,
               anticipatePin: 1,
-              markers: true
             },
           });
 
