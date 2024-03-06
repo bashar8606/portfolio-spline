@@ -7,13 +7,8 @@ const HomeAbout = ({ data }) => {
 	const { main } = useHomeAbout({ style });
 
 	return (
-<<<<<<< HEAD
-		<section className={`${style.section} sec-padding d-flex align-items-center `} ref={main}>
+		<section className={`${style.section} sec-padding d-flex  `} ref={main}>
 			{/* <div className={`ratio ratio-1x1 ${style.grad}`}></div> */}
-=======
-		<section className={`${style.section} sec-padding d-flex `} ref={main}>
-			<div className={`ratio ratio-1x1 ${style.grad}`}></div>
->>>>>>> 2a98c50955c2ac5c7bde9a9f997106883007df1b
 			<div className={`ratio ${style.portrait}`}>
 				<Image src={`/assets/images/portrait.png`} fill className="object-fit-cover" alt="logo icon" />
 			</div>
