@@ -2,8 +2,10 @@
 
 
 .section {
-    --bg:white;
-    --color:rgb(29, 29, 29);
+    --bg: white;
+    --color: rgb(29, 29, 29);
+    --t-white: #fff;
+    --t-dark: #525252;
     position: relative;
     min-height: 100vh;
     background-color: var(--bg);
@@ -15,14 +17,14 @@
 
 .portrait {
     position: absolute;
-    --bs-aspect-ratio:115.3%;
+    --bs-aspect-ratio: 115.3%;
     left: 50%;
     transform: translateX(-50%);
     width: 30%;
     bottom: 0;
     z-index: 3;
 }
-
+// radial-gradient(rgb(0, 246, 131), rgb(50, 249, 210))
 .grad {
     position: absolute;
     background-image: linear-gradient(180deg, #06F 0%, #FFDDB7 100%);
@@ -34,4 +36,15 @@
     bottom: -70%;
     filter: blur(20px);
     opacity: 0.6;
+}
+
+.title {
+    color: var(--t-dark);
+
+    &_white {
+        color: var(--t-white);
+    }
+    &_grad{
+
+    }
 }

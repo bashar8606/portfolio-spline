@@ -7,14 +7,25 @@ const HomeAbout = ({ data }) => {
 	const { main } = useHomeAbout({ style });
 
 	return (
+<<<<<<< HEAD
 		<section className={`${style.section} sec-padding d-flex align-items-center `} ref={main}>
 			{/* <div className={`ratio ratio-1x1 ${style.grad}`}></div> */}
+=======
+		<section className={`${style.section} sec-padding d-flex `} ref={main}>
+			<div className={`ratio ratio-1x1 ${style.grad}`}></div>
+>>>>>>> 2a98c50955c2ac5c7bde9a9f997106883007df1b
 			<div className={`ratio ${style.portrait}`}>
 				<Image src={`/assets/images/portrait.png`} fill className="object-fit-cover" alt="logo icon" />
 			</div>
 			<div className="container">
-
-				fgdgfdgf
+				<div className="row">
+					<div className="col-lg-6">
+						<h2 className={`fw-700 ${style.title}`}><span className={style.title_white}>Building interactive</span> experiences
+							that blend technology seamlessly
+							for a <span className={style.title_white}>modern</span> and <span className={style.title_grad}>Interactive</span> world.</h2>
+					</div>
+					<div className="col-lg-6"></div>
+				</div>
 			</div>
 		</section>
 	);
