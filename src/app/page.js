@@ -1,12 +1,14 @@
 import HomeAbout from '@/widgets/HomeAbout'
 import HomeBanner from '@/widgets/HomeBanner'
 import HomeProjects from '@/widgets/HomeProjects'
+import HomeVision from '@/widgets/HomeVision'
 
 export default function Home() {
   return (
     <main className='bg-secondary'>
       <HomeBanner />
       <HomeAbout/>
+      <HomeVision/>
       <HomeProjects data={aboutData}/>
     </main>
   )
