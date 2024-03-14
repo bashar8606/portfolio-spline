@@ -9,6 +9,15 @@ const HomeAbout = ({ data }) => {
 	return (
 		<section className={`${style.section} sec-padding d-flex  `} ref={main}>
 			{/* <div className={`ratio ratio-1x1 ${style.grad}`}></div> */}
+			<div className={`d-flex ${style.title_wrap}`}>
+				<span className="d-block">Bashar</span>
+				<span className="d-block">Bashar</span>
+				<span className="d-block">Bashar</span>
+				<span className="d-block">Bashar</span>
+				<span className="d-block">Bashar</span>
+			</div>
+
+				<Image src={`/assets/images/bg-blur1.png`} quality={90} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw" fill className="object-fit-cover" alt="logo icon" />
 			<div className={`ratio ${style.portrait}`}>
 				<Image src={`/assets/images/portrait.png`} fill className="object-fit-cover" alt="logo icon" />
 			</div>
@@ -19,7 +28,24 @@ const HomeAbout = ({ data }) => {
 							that blend technology seamlessly
 							for a <span className={style.title_white}>modern</span> and <span className={style.title_grad}>Interactive</span> world.</h2>
 					</div>
-					<div className="col-lg-6"></div>
+					<div className="col-lg-6">
+						<div className="d-flex flex-column">
+						<div className={`card-item`}>
+							<div className="ratio ratio-1x1 overflow-hidden rounded-circle d-none">
+
+						<video width={`100%`}
+											height={`100%`}
+											loop
+											muted
+											autoPlay
+											playsInline
+											className="object-fit-cover position-absolute top-0 start-0 w-100 h-100"
+											src="/assets/images/video.mp4">
+										</video>
+												</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
