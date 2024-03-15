@@ -23,6 +23,7 @@
     font-size: 90px;
     font-weight: 300;
     gap: 110px;
+    will-change: transform;
 }
 
 .portrait {
@@ -67,3 +68,8 @@
 
     }
 }
+
+.bg_cover
+ {
+    will-change: transform;
+ }

@@ -7,9 +7,9 @@ import GlobalProviders from '@/components/GlobalProviders';
 const fontPrimary = Red_Hat_Display({
   subsets: ['latin'],
   variable: '--ff-primary',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '600', '700'],
   display: "swap",
-  
+  adjustFontFallback: false
 })
 
 export const metadata = {
