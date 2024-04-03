@@ -9,38 +9,52 @@ const HomeAbout = ({ data }) => {
 	return (
 		<section className={`${style.section} sec-padding d-flex  `} ref={main}>
 			{/* <div className={`ratio ratio-1x1 ${style.grad}`}></div> */}
-			<div className={`row text-white flex-nowrap ${style.title_wrap}`}>
-				<span className="d-block col-auto">Bashar</span>
+			<div className={`row text-white align-items-center flex-nowrap ${style.title_wrap}`}>
+				<span className="d-block col-auto">Webgl</span>
 				<div className={`col-auto ${style.star}`}>
-					<div className="ratio ratio-1x1"></div>
+					<div className="ratio ratio-1x1">
+						<Image src={`/assets/images/star.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
+				</div>
+				<span className="d-block col-auto">Interactive</span>
+				<div className={`col-auto ${style.star}`}>
+					<div className="ratio ratio-1x1">
+						<Image src={`/assets/images/star.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
+				</div>
+				<span className="d-block col-auto">Development</span>
+				<div className={`col-auto ${style.star}`}>
+					<div className="ratio ratio-1x1">
+						<Image src={`/assets/images/star.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
+				</div>
+				<span className="d-block col-auto">Frontend</span>
+				<div className={`col-auto ${style.star}`}>
+					<div className="ratio ratio-1x1">
+						<Image src={`/assets/images/star.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
+				</div>
+				<span className="d-block col-auto">3d</span>
+				<div className={`col-auto ${style.star}`}>
+					<div className="ratio ratio-1x1">
+						<Image src={`/assets/images/star.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
 				</div>
 				<span className="d-block col-auto">Bashar</span>
 				<div className={`col-auto ${style.star}`}>
-					<div className="ratio ratio-1x1"></div>
+					<div className="ratio ratio-1x1">
+						<Image src={`/assets/images/star.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
 				</div>
 				<span className="d-block col-auto">Bashar</span>
 				<div className={`col-auto ${style.star}`}>
-					<div className="ratio ratio-1x1"></div>
-				</div>
-				<span className="d-block col-auto">Bashar</span>
-				<div className={`col-auto ${style.star}`}>
-					<div className="ratio ratio-1x1"></div>
-				</div>
-				<span className="d-block col-auto">Bashar</span>
-				<div className={`col-auto ${style.star}`}>
-					<div className="ratio ratio-1x1"></div>
-				</div>
-				<span className="d-block col-auto">Bashar</span>
-				<div className={`col-auto ${style.star}`}>
-					<div className="ratio ratio-1x1"></div>
-				</div>
-				<span className="d-block col-auto">Bashar</span>
-				<div className={`col-auto ${style.star}`}>
-					<div className="ratio ratio-1x1"></div>
+					<div className="ratio ratio-1x1">
+						<Image src={`/assets/images/star.svg`} fill className="object-fit-cover" alt="logo icon" />
+					</div>
 				</div>
 			</div>
 
-			<Image src={`/assets/images/bg-blur-optimized.png`} quality={90} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw" fill className={`object-fit-cover ${style.bg_cover}`} alt="logo icon" />
+			<Image src={`/assets/images/bg-blur-optimized.png`} quality={75} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw" fill className={`object-fit-cover ${style.bg_cover}`} alt="logo icon" />
 			<div className={`ratio ${style.portrait}`}>
 				<Image src={`/assets/images/portrait.png`} fill className="object-fit-cover" alt="logo icon" />
 			</div>

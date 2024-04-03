@@ -1,6 +1,7 @@
 import HomeAbout from '@/widgets/HomeAbout'
 import HomeBanner from '@/widgets/HomeBanner'
 import HomeProjects from '@/widgets/HomeProjects'
+import HomeSkills from '@/widgets/HomeSkills'
 import HomeVision from '@/widgets/HomeVision'
 
 export default function Home() {
@@ -8,8 +9,9 @@ export default function Home() {
     <main className='bg-secondary'>
       <HomeBanner />
       <HomeAbout/>
-      <HomeVision/>
+      {/* <HomeVision/> */}
       <HomeProjects data={aboutData}/>
+      <HomeSkills data={chooseData}/>
     </main>
   )
 }
@@ -39,3 +41,33 @@ const aboutData = {
     },
   ]
 }
+
+
+const chooseData =
+{
+  title: "Why Choose Us",
+  title_sub: "EducationTechPlus",
+  data: [{
+    img: {
+      url: "/assets/images/t1.png",
+      alt: ""
+    },
+    title: "Frontend<br/> Development",
+    description:"Backed by a team of educational experts and technology innovators, we continuously evolve to bring you the best in educational tools and resources."
+  }, {
+    img: {
+      url: "/assets/images/t2.png",
+      alt: ""
+    },
+    title: "Interaction<br/> Development",
+    description:"Join a thriving community of educators, learners, and institutions collaborating to shape the future of education. Share insights, resources, and experiences to enhance learning outcomes."
+  },{
+    img: {
+      url: "/assets/images/t3.png",
+      alt: ""
+    },
+    title: "UI/UX<br/>Designing",
+    description:"Our focus is on creating personalized learning experiences, ensuring engagement, understanding, and success for every student."
+  }]
+}
+
