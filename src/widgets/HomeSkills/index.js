@@ -21,44 +21,58 @@ const HomeSkills = ({ data }) => {
 
 						<div className={`${style.card_wrap}`}>
 							<div className={`d-flex align-items-center`}>
-								<Card>
+								<Card className={`d-flex justify-content-center `}>
 									<div className={style.icons}>
-										<Card className={`${style.icon_skill}  rounded-4 p-2`} instyle={{"--top": "-13%", "--left": "10%"}}>
+										<Card className={`${style.icon_skill}  rounded-4 p-2`} instyle={{ "--top": "-13%", "--left": "10%" }}>
 											<div className="ratio ratio-1x1">
 												<Image src={`/assets/images/skills/icon_next.png`} quality={100} fill className="object-fit-contain" />
 											</div>
 										</Card>
-										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{"--top": "-10%", "--left": "80%"}}>
+										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{ "--top": "-10%", "--left": "60%" }}>
 											<div className="ratio ratio-1x1">
 												<Image src={`/assets/images/skills/icon_react.png`} quality={100} fill className="object-fit-contain" />
 											</div>
 										</Card>
-										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{"--top": "10%", "--left": "10%"}}>
+										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{ "--top": "20%", "--left": "90%" }}>
 											<div className="ratio ratio-1x1">
 												<Image src={`/assets/images/skills/icon_tailwind.png`} quality={100} fill className="object-fit-contain" />
 											</div>
 										</Card>
-										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{"--top": "10%", "--left": "10%"}}>
+										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{ "--top": "60%", "--left": "95%" }}>
 											<div className="ratio ratio-1x1">
 												<Image src={`/assets/images/skills/icon_bootstrap.png`} quality={100} fill className="object-fit-contain" />
 											</div>
 										</Card>
-										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{"--top": "10%", "--left": "10%"}}>
+										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{ "--top": "90%", "--left": "15%" }}>
 											<div className="ratio ratio-1x1">
 												<Image src={`/assets/images/skills/icon_git.png`} quality={100} fill className="object-fit-contain" />
 											</div>
 
 										</Card>
-										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{"--top": "10%", "--left": "10%"}}>
+										<Card className={`${style.icon_skill} rounded-4 p-2`} instyle={{ "--top": "98%", "--left": "65%" }}>
 											<div className="ratio ratio-1x1">
 												<Image src={`/assets/images/skills/icon_jira.png`} quality={100} fill className="object-fit-contain" />
 											</div>
-
 										</Card>
+
+										<div className={`${style.toolbar} position-absolute z-3`} style={{ "--top": "15%", "--left": "-4%" }}>
+											<Card className={`${style.toolbar_window} rounded-4 p-2`} >
+												<div className={`d-flex justify-content-end gap-2 ${style.toolbar_head}`}>
+													<span className="d-block rounded-circle "></span>
+													<span className="d-block rounded-circle "></span>
+													<span className="d-block rounded-circle "></span>
+												</div>
+
+												<div className={`ratio w-50 mx-auto my-4 ${style.toolbar_body}`} style={{ "--bs-aspect-ratio": '881%' }}>
+													<Image src={`/assets/images/icon_stack.svg`} fill className="object-fit-contain" />
+												</div>
+
+											</Card>
+										</div>
 									</div>
-									<div className="ratio ratio-4x3">
-										<div className="text-white">
-											sdf
+									<div className={` ${style.code_wrap}`}>
+										<div className="ratio" style={{ "--bs-aspect-ratio": '65.7%' }} >
+											<Image src={`/assets/images/text.png`} quality={100} fill className="object-fit-contain" />
 										</div>
 									</div>
 								</Card>

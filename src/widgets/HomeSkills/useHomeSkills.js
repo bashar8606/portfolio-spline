@@ -20,6 +20,9 @@ export const useHomeSkills = (style) => {
           self.selector(`.${style.portrait}`);
           const content_wrap = self.selector(`.${style.content_wrap}`);
           const content_img = self.selector(`.${style.content_img}`);
+          const toolbar = self.selector(`.${style.toolbar}`);
+          const toolbar_body = self.selector(`.${style.toolbar_body}`);
+          const icon_skill = self.selector(`.${style.icon_skill}`);
           // items?.map((item, i) => {
           //   gsap.set(item, { autoAlpha: 0, scale: .5, y: (((i + 1) * 10) + 20) })
           // })
@@ -44,10 +47,23 @@ export const useHomeSkills = (style) => {
           //animation 2
           tl.to(content_img, { xPercent: 100, x: 0 })
           tl.addLabel("animation1", "<")
+          tl.to(toolbar, { width: "30%", '--top': "75%" , '--left': "10%"}, "animation1");
+          tl.to(toolbar_body, { '--bs-aspect-ratio': "75%", autoAlpha: 0 }, "animation1");
+          tl.to(icon_skill[0], { '--top': "-10%" , '--left': "18%" }, "animation1");
+          tl.to(icon_skill[1], { '--top': "-10%" , '--left': "18%" }, "animation1");
+          tl.to(icon_skill[2], { autoAlpha: 0, yPercent: 100 }, "animation1");
+          tl.to(icon_skill[3], { autoAlpha: 0, yPercent: 100 }, "animation1");
+          tl.to(icon_skill[4], { autoAlpha: 0, xPercent: -100 }, "animation1");
+          tl.to(icon_skill[5], { autoAlpha: 0, xPercent: -100 }, "animation1");
      
+
+
+
           //animation 3
           tl.to(content_img, { xPercent: 0, x: 0 })
           tl.addLabel("animation2", "<")
+          tl.to(toolbar, { width: "26%", '--top': "80%" , '--left': "65%"}, "animation2");
+          tl.to(toolbar_body, { '--bs-aspect-ratio': "125%", autoAlpha: 0 }, "animation2");
         },
   
         "(min-width: 600px) and (max-width: 959px)": function () {

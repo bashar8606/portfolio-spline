@@ -51,4 +51,41 @@
     width: 80px;
     left: var(--left);
     top: var(--top);
+    will-change: transform, top, left, width;
+}
+
+.toolbar {
+    width: 10%;
+    top: var(--top);
+    left: var(--left);
+    will-change: transform, top, left, width;
+
+    &_head {
+        span {
+            --size: 8px;
+            --bg: #FEBB40;
+            width: var(--size);
+            height: var(--size);
+            background-color: var(--bg);
+
+            &:first-of-type {
+                --bg: #FB5854;
+            }
+
+            &:last-of-type {
+                --bg: #34C848;
+            }
+        }
+    }
+    &_body {
+        will-change: transform;
+    }
+}
+
+.code_wrap {
+    width: 80%;
+    margin: 70px auto;
+    border-radius: 20px;
+    padding: 4% 9%;
+    background: linear-gradient(135deg, rgb(255 255 255 / 13%), black);
 }
