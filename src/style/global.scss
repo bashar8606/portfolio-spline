@@ -66,6 +66,47 @@ html {
 //   }
 
 
+html.lenis {
+    @include lg {
+      height: auto;
+    }
+  }
+  
+  .lenis.lenis-smooth {
+    @include lg {
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    @include lg {
+      overscroll-behavior: contain;
+    }
+  }
+  
+  .lenis.lenis-stopped {
+    @include lg {
+      overflow: hidden;
+    }
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    @include lg {
+      pointer-events: none;
+  
+      ::-moz-selection {
+        /* Code for Firefox */
+        color: #fff;
+        background: #000;
+      }
+  
+      ::selection {
+        /* Code for Firefox */
+        color: #fff;
+        background: #000;
+      }
+    }
+  }
 body {
  
     --bs-body-font-family: var(--ff-primary);

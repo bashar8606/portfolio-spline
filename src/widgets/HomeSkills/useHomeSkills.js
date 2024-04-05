@@ -39,7 +39,7 @@ export const useHomeSkills = (style) => {
                 end: "bottom 85%",
                 // markers: true,
                 // endTrigger:content_item[3],
-                scrub: 0.5,
+                scrub: true,
               },
             })
   

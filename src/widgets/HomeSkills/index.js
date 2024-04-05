@@ -70,9 +70,9 @@ const HomeSkills = ({ data }) => {
 											</Card>
 										</div>
 									</div>
-									<div className={` ${style.code_wrap}`}>
-										<div className="ratio" style={{ "--bs-aspect-ratio": '65.7%' }} >
-											<Image src={`/assets/images/text.png`} quality={100} fill className="object-fit-contain" />
+									<div className={` ${style.code_wrap}`} style={{ "--bs-aspect-ratio": '65.7%' }}>
+										<div className="ratio"  >
+											<Image src={`/assets/images/text.png`} quality={100} unoptimized fill className="object-fit-contain" />
 										</div>
 									</div>
 								</Card>
