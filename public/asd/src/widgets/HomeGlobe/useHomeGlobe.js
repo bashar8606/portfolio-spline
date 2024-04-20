@@ -17,13 +17,14 @@ const useHomeGlobe = ({ style }) => {
       const anim_elem = self.selector(`.${style.anim}`);
       const anim_elem1 = self.selector(`.${style.anim_in}`);
       const anim_hide = self.selector(`.${style.section1}`);
+      const portrait = self.selector(`.${style.portrait}`);
       
       ScrollTrigger.matchMedia({
         "(min-width: 992px)": function () {
-          
+          gsap.set(main.current,{clipPath: `circle(0%)`})
           // gsap.set(main.current,{clipPath: `circle(0%)`})
           gsap.set(circle1, { yPercent: -180, scale: 2, boxShadow: "rgb(255 255 255 / 40%) 0 09px 88px -26px" })
-          gsap.set(circle2, { yPercent: 180, scale: 2, boxShadow: "rgb(143 12 63 / 40%) 0 -109px 88px -26px" })
+          gsap.set(circle2, { yPercent: 180, scale: 2, boxShadow: "rgb(3 254 148 / 20%) 0 -50px 88px -26px" })
           gsap.set(circleGrad, { scaleX: 1.6, scaleY: 1.2, xPercent: 0, yPercent: 9 })
           gsap.set(anim_elem, { autoAlpha: 0, scaleY: 1.05, scaleX: 1.15, filter: "blur(10px)" })
           gsap.set(mainPin.current, { "--bg-color": `#fff`, "--color": `#000`, })
@@ -32,7 +33,7 @@ const useHomeGlobe = ({ style }) => {
             "--bg-color": `#000`,
             "--color": `#fff`,
             scrollTrigger: {
-              start: "top top",
+              start: "top -50%",
               toggleActions: "play none none reverse",
               trigger: main.current,
               once: false
@@ -43,14 +44,14 @@ const useHomeGlobe = ({ style }) => {
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: main.current,
-              scrub: 1,
+              scrub: true,
               pin: true,
               ease: "expo",
               end: "150%",
             },
           });
           // tl.to(main.current, {clipPath: `circle(100%)`})
-
+          tl.to(main.current, {clipPath: `circle(100%)`},"<")
           tl.to(anim_elem1, {
             stagger: 0.03,
             autoAlpha: 0,
@@ -60,7 +61,11 @@ const useHomeGlobe = ({ style }) => {
             duration: 0.2
           }, ">.2");
           tl.to(anim_hide, {
-            scale: 0.8,
+            scale: 1,
+          }, "<");
+          tl.to(portrait, {
+            scale: 0.9,
+            transformOrigin:"bottom center"
           }, "<");
           tl.to(circle1, {
             yPercent: 0,
