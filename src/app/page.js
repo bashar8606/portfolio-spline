@@ -8,7 +8,7 @@ export default function Home() {
     <main className='bg-secondary'>
       <HomeBanner />
       <HomeAbout/>
-      <HomeVision/>
+      {/* <HomeVision/> */}
       <HomeProjects data={aboutData}/>
     </main>
   )

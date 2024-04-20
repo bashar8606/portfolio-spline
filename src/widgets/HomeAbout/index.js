@@ -47,7 +47,7 @@ const HomeAbout = ({ data }) => {
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-6">
-						<h2 className={`fw-700 ${style.title}`}><span className={style.title_white}>Building interactive</span> experiences
+						<h2 className={`fw-500 ${style.title}`}><span className={style.title_white}>Building interactive</span> experiences
 							that blend technology seamlessly
 							for a <span className={style.title_white}>modern</span> and <span className={style.title_grad}>Interactive</span> world.</h2>
 					</div>

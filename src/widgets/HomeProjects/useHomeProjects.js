@@ -74,22 +74,8 @@ const useHomeProjects = ({ style }) => {
           tl2.from(btn_icon, { duration: 1, scale: 0.8, ease: Elastic.easeInOut, }, "<");
           tl2.from(btn_text, { duration: 0.8, width: 0, padding: 0, ease: Expo.easeInOut }, "<.5");
           
-          gsap.set(title, { autoAlpha: 0, letterSpacing:"40px", });
-          gsap.to(title, { scrollTrigger: {  markers: true, trigger: title, scrub: 0.5}, letterSpacing:"5px", autoAlpha: 1, ease: Expo.easeOut, duration: .8 })
-
-          const tl1 = gsap.timeline({
-            scrollTrigger: {
-              trigger: main.current,
-              end: "bottom bottom",
-              start: "top top",
-              scrub: 0.8,
-              pin: title_wrap,
-              pinSpacing: false,
-              anticipatePin: 1,
-            },
-          });
-
-
+          gsap.set(title, { autoAlpha: 0, });
+          gsap.to(title, { scrollTrigger: {  markers: true, trigger: title, scrub: 0.5}, autoAlpha: 1, ease: Expo.easeOut, duration: .8 })
 
 
           const tl = gsap.timeline({

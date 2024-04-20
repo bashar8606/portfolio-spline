@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <HomeBanner />
       <HomeAbout  data={aboutData} />
-      <HomeFeatures  id="whatweoffer" />
+      {/* <HomeFeatures  id="whatweoffer" /> */}
       <HomePrograms  id="ourprograms" data={programData} />
       <HomeTab id="aboutus"  />
       <HomeChoose  id="whychooseus" data={chooseData} />
