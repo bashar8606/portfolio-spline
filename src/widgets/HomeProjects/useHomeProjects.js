@@ -75,7 +75,7 @@ const useHomeProjects = ({ style }) => {
           tl2.from(btn_text, { duration: 0.8, width: 0, padding: 0, ease: Expo.easeInOut }, "<.5");
           
           gsap.set(title, { autoAlpha: 0, letterSpacing:"40px", });
-          gsap.to(title, { scrollTrigger: {  markers: true, trigger: title, scrub: true}, letterSpacing:"5px", autoAlpha: 1, ease: Expo.easeOut, duration: .8 })
+          gsap.to(title, { scrollTrigger: { trigger: title, scrub: true}, letterSpacing:"5px", autoAlpha: 1, ease: Expo.easeOut, duration: .8 })
 
           const tl1 = gsap.timeline({
             scrollTrigger: {

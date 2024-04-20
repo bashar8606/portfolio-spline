@@ -28,7 +28,8 @@
     max-height: 100%;
     top: 50%;
     transform: translateY(-50%) scale(0.95);
-pointer-events: none;
+    pointer-events: none;
+
     @include lg {
         height: 100%;
         max-height: initial;
@@ -135,6 +136,7 @@ pointer-events: none;
 
         .content {
             position: relative;
+
             @include md {
                 margin-bottom: size(50);
             }
@@ -146,7 +148,7 @@ pointer-events: none;
             .title {
                 width: 100%;
                 font-size: 50px;
-                
+
                 @include lg {
                     font-size: size(80);
                 }
@@ -154,11 +156,13 @@ pointer-events: none;
 
             .description {
                 width: 100%;
-                max-width: size(930);
-                font-size: 18px;
+                max-width: size(530);
+                font-size: 14px;
                 line-height: 1.6;
+                opacity: .75;
+
                 @include lg {
-                    font-size: size(24);
+                    font-size: size(20);
                 }
             }
         }
@@ -173,6 +177,7 @@ pointer-events: none;
         @include md {
             --gutter-y: 0px;
         }
+
         @include xl {
             --gutter-x: #{size(150)};
         }
@@ -228,6 +233,7 @@ pointer-events: none;
     @include max(991.98) {
         padding: 80px 0;
     }
+
     @include max(767.98) {
         padding: size(50) 0px size(50);
     }
@@ -239,6 +245,7 @@ pointer-events: none;
     .sub_title {
         font-weight: 300;
         font-size: 50px;
+
         @include lg {
             font-weight: 400;
             font-size: size(80);
@@ -250,10 +257,12 @@ pointer-events: none;
         line-height: 1.6;
         max-width: 230px;
         font-weight: 300;
+
         @include md {
             font-weight: 400;
             max-width: none;
         }
+
         @include lg {
             font-size: size(18);
         }
@@ -273,6 +282,8 @@ pointer-events: none;
     width: 30%;
     bottom: 0;
     z-index: 3;
+    will-change: transform;
+
     &::after {
         // content: '';
         position: absolute;
@@ -284,21 +295,68 @@ pointer-events: none;
     }
 }
 
-.bg_decor {
-    background-color: #03FE94;
-    width: 600px;
+// .bg_decor {
+//     background-color: #03FE94;
+//     width: 600px;
 
-    right: 0;
-    top: 0;
-    filter: blur(50px);
-    opacity: 0.5;
-    transform: translate(50%, -50%);
+//     right: 0;
+//     top: 0;
+//     filter: blur(50px);
+//     opacity: 0.5;
+//     transform: translate(50%, -50%);
 
 
 
-    &::after {
-        content: '';
-        padding: 35%;
-        display: block;
+//     &::after {
+//         content: '';
+//         padding: 35%;
+//         display: block;
+//     }
+// }
+
+.designation {
+    font-size: 30px;
+}
+
+.block_icons {
+    .icon {
+        position: absolute;
+        top: var(--t);
+        left: var(--l);
+        width: 64px;
+        will-change: transform;
+      
+        &:nth-of-type(1) {
+            --t: 80%;
+            --l: 10%;
+        }
+        &:nth-of-type(2) {
+            --t: 55%;
+            --l: -2%;
+        }
+        &:nth-of-type(3) {
+            --t: 26%;
+            --l: 2%;
+        }
+        &:nth-of-type(4) {
+            --t: 6%;
+            --l: 21%;
+        }
+        &:nth-of-type(5) {
+            --t: 10%;
+            --l: 80%;
+        }
+        &:nth-of-type(6) {
+            --t: 30%;
+            --l: 93%;
+        }
+        &:nth-of-type(7) {
+            --t: 55%;
+            --l: 94%;
+        }
+        &:nth-of-type(8) {
+            top: 76%;
+            left: 84%;
+        }
     }
 }

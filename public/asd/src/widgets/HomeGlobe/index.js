@@ -27,22 +27,22 @@ const HomeGlobe = ({ data }) => {
               <div className={`${style.inner}`}>
                 <div className={`${style.content} col-lg-5`}>
                     <h2
-                      className={`${style.title} ${style.anim_in} fw-300 mb-2 mb-lg-3 fw-regular`}
+                      className={`${style.title} ${style.anim_in} fw-300 mb-lg-1 lh-1  fw-regular`}
                     >
                       Bashar ahammed
                     </h2>
 
                     <p
-                      className={`${style.description} ${style.anim_in}   mb-3 `}
+                      className={`${style.designation} ${style.anim_in} fw-300  mb-lg-4 `}
                     >
                       Designer / Developer
                     </p>
-                    <p className={`${style.anim_in} title-md`}>
-                    Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web ing software for an advertising agency, a start-up, a huge corporation
+                    <p className={`${style.anim_in} ${style.description} title-md mb-lg-4`}>
+                      Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web ing software for an advertising agency, a start-up, a huge corporation
                     </p>
                     <div className={`${style.anim_in} ${style.btn_wrap}`}>
-                      <Link href="#" className="btn btn-light rounded-pill me-3">Resume</Link>
-                      <Link href="#" className="btn btn-primary rounded-pill">Get in touch</Link>
+                      <Link href="#" className="btn btn-lightblue rounded-pill me-3">Resume</Link>
+                      <Link href="#" className="btn btn-secondary rounded-pill">Get in touch</Link>
                     </div>
                 </div>
               </div>
@@ -53,10 +53,10 @@ const HomeGlobe = ({ data }) => {
                 <div className="row justify-content-between align-items-end">
                   <div className="col-lg-4">
                     <p className="mb-0">
+                      <span className="d-inline-block me-3 title-md fw-500"> LinkedIn</span>
+                      <span className="d-inline-block me-3 title-md fw-500"> Github</span>
                       <span className="d-inline-block me-3 title-md fw-500"> Behance</span>
-                      <span className="d-inline-block me-3 title-md fw-500"> Behance</span>
-                      <span className="d-inline-block me-3 title-md fw-500"> Behance</span>
-                      <span className="d-inline-block me-3 title-md fw-500"> Behance</span>
+                      <span className="d-inline-block me-3 title-md fw-500"> Dribbble</span>
                     </p>
                   </div>
                   <div className="col-lg-3">
@@ -64,7 +64,7 @@ const HomeGlobe = ({ data }) => {
                   className={`${style.list}  row row-cols-md-2`}
                 >
                     <div className={`${style.item}`} >
-                        <h3 className={`${style.sub_title}  fw-300`}>
+                        <h3 className={`${style.sub_title} lh-1  fw-300 mb-0`}>
                           50+
                         </h3>
                         <p className={`${style.sub_description} mb-0`}>
@@ -73,7 +73,7 @@ const HomeGlobe = ({ data }) => {
                     </div>
 
                     <div className={`${style.item}`} >
-                        <h3 className={`${style.sub_title}   fw-300`}>
+                        <h3 className={`${style.sub_title} lh-1 mb-0  fw-300`}>
                           6+
                         </h3>
                         <p className={`${style.sub_description} mb-0`}>
@@ -92,7 +92,41 @@ const HomeGlobe = ({ data }) => {
         </div>
         <div className={style.section2}>
           <div className={`${style.block}`}>
+         
             <div className={`ratio ratio-1x1 ${style.block_ratio}`}>
+
+            <div className={style.block_icons}>
+              
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                 <Image src={`/assets/images/skills/icon_react.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+  
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                <Image src={`/assets/images/skills/icon_next.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                 <Image src={`/assets/images/skills/icon_tailwind.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                 <Image src={`/assets/images/skills/icon_git.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                 <Image src={`/assets/images/skills/icon1.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                 <Image src={`/assets/images/skills/icon2.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                 <Image src={`/assets/images/skills/icon3.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+              <div className={`${style.icon} ratio ratio-1x1`}>
+                 <Image src={`/assets/images/skills/icon_react.png`} fill className="object-fit-contain" alt="logo icon" />
+              </div>
+         
+              </div>
+
+
+
               <div
                 className={`${style.block_circle} ${style.block_circle__one}`}
               ></div>

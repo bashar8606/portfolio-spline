@@ -18,6 +18,7 @@ const useHomeGlobe = ({ style }) => {
       const anim_elem1 = self.selector(`.${style.anim_in}`);
       const anim_hide = self.selector(`.${style.section1}`);
       const portrait = self.selector(`.${style.portrait}`);
+      const icon = self.selector(`.${style.icon}`);
       
       ScrollTrigger.matchMedia({
         "(min-width: 992px)": function () {
@@ -27,6 +28,7 @@ const useHomeGlobe = ({ style }) => {
           gsap.set(circle2, { yPercent: 180, scale: 2, boxShadow: "rgb(3 254 148 / 20%) 0 -50px 88px -26px" })
           gsap.set(circleGrad, { scaleX: 1.6, scaleY: 1.2, xPercent: 0, yPercent: 9 })
           gsap.set(anim_elem, { autoAlpha: 0, scaleY: 1.05, scaleX: 1.15, filter: "blur(10px)" })
+          gsap.set(icon, { autoAlpha: 0, scaleY: 1.05, scaleX: 1.15, filter: "blur(10px)" })
           gsap.set(mainPin.current, { "--bg-color": `#fff`, "--color": `#000`, })
 
           gsap.to(mainPin.current, {
@@ -47,11 +49,11 @@ const useHomeGlobe = ({ style }) => {
               scrub: true,
               pin: true,
               ease: "expo",
-              end: "150%",
+              end: "200%",
             },
           });
           // tl.to(main.current, {clipPath: `circle(100%)`})
-          tl.to(main.current, {clipPath: `circle(100%)`},"<")
+          tl.to(main.current, {clipPath: `circle(100%)`, duration: 1},"<")
           tl.to(anim_elem1, {
             stagger: 0.03,
             autoAlpha: 0,
@@ -82,7 +84,7 @@ const useHomeGlobe = ({ style }) => {
             xPercent: 21,
             yPercent: 6,
           });
-          tl.to(anim_elem, {
+          tl.to(icon, {
             autoAlpha: 1,
             stagger: 0.05,
             filter: "blur(0px)",
