@@ -43,7 +43,7 @@ export const useHomeTab = (style) => {
               pin: main.current,
               start: "top top",
               end: "200%",
-              scrub: 0.5,
+              scrub: true,
             },
           })
         tl.to(tab_wrap, { scale: 1 })

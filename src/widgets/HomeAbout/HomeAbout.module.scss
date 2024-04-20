@@ -2,14 +2,14 @@
 
 
 .section {
-    --bg: white;
+    --bg: rgb(255, 255, 255);
     --color: rgb(29, 29, 29);
     --t-white: #fff;
     --t-dark: #525252;
     position: relative;
     min-height: 100vh;
     background-color: var(--bg);
-    background-image:radial-gradient(rgb(0, 246, 131), rgb(50, 249, 210))  ;
+    // background-image:radial-gradient(rgb(0, 246, 131), rgb(50, 249, 210))  ;
     color: var(--color);
     clip-path: circle(45px);
     overflow: hidden;
@@ -72,4 +72,9 @@
 .bg_cover
  {
     will-change: transform;
+ }
+
+
+ .star {
+    width: 90px;
  }

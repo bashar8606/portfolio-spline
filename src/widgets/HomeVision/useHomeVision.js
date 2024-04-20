@@ -24,7 +24,7 @@ export const useHomeAbout = ({ style }) => {
               pin: true,
               start:"top top",
               end:"200%",
-              scrub: .5,
+              scrub: true,
             },
           });
 

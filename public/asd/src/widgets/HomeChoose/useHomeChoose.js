@@ -57,7 +57,7 @@ export const useHomeChoose = (style) => {
               pin: content_img,
               end: "bottom 85%",
               // endTrigger:content_item[3],
-              scrub: 0.5,
+              scrub: true,
             },
           })
 

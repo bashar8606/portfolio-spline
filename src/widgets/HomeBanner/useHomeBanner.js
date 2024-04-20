@@ -26,7 +26,7 @@ export const useHomeBanner = ({ style }) => {
               pin: line,
               start: "center 50%",
               end: "400%",
-              scrub: .5,
+              scrub: true,
               anticipatePin: 1,
             },
           });
@@ -56,7 +56,7 @@ export const useHomeBanner = ({ style }) => {
   //       trigger: line,
   //       pin:line,
   //       end: "200%",
-  //       scrub: .5,
+  //       scrub: true,
   //       markers: true
   //     },
   //   });

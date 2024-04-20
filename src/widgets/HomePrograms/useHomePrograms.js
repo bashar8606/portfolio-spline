@@ -30,7 +30,7 @@ const useHomeFeatures = ({ style }) => {
         force3d: true,
         scrollTrigger: {
           trigger: main.current,
-          scrub: 0.5,
+          scrub: true,
           end: "top -20%",
         },
       })

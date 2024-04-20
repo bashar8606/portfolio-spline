@@ -33,7 +33,7 @@ export const useHomeApp = (style) => {
     gsap.set(app2, { yPercent: -20 })
     gsap.set(app3, { xPercent: 20, yPercent: 20 })
 
-    let tl2 = gsap.timeline({ force3d: true, scrollTrigger: { trigger: main.current, scrub: 0.5, }})
+    let tl2 = gsap.timeline({ force3d: true, scrollTrigger: { trigger: main.current, scrub: true, }})
     tl2.to(app1, { yPercent: 0 })
     tl2.to(app2, { yPercent: 0 }, "<")
     tl2.to(app3, { xPercent: 0, yPercent: 0 }, "<")
