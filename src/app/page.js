@@ -1,9 +1,9 @@
 import HomeAbout from '@/widgets/HomeAbout'
 import HomeBanner from '@/widgets/HomeBanner'
+import HomeGlobe from '@/widgets/HomeGlobe'
 import HomeProjects from '@/widgets/HomeProjects'
 import HomeSkills from '@/widgets/HomeSkills'
 import HomeVision from '@/widgets/HomeVision'
-import HomeGlobe from '../../public/asd/src/widgets/HomeGlobe'
 
 export default function Home() {
   return (
