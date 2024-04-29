@@ -10,7 +10,7 @@ const EmptyLenis = ({ children }) => {
 const enableLenis = typeof navigator === 'undefined' ? false : navigator?.platform?.indexOf('Mac') > -1 === false ? true : false
 //const enableLenis = false
 const LenisComponent = enableLenis ? LenisScroll : EmptyLenis
-const GlobalProviders = ({ children }) => {
+const GlobalProviders = ({ children }) => { 
   return (
     <LenisComponent>
       <RecoilRoot>{children}</RecoilRoot>
