@@ -10,7 +10,7 @@ export default function Home() {
     <main className='bg-secondary'>
       <HomeBanner />
       <HomeGlobe/>
-      <HomeAbout/>
+      {/* <HomeAbout/> */}
       {/* <HomeVision/> */}
       <HomeProjects data={aboutData}/>
       <HomeSkills data={chooseData}/>
