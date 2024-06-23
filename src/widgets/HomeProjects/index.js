@@ -11,13 +11,13 @@ const HomeProjects = ({ id }) => {
 	const { main, customSettings, customSettings1, width, show, handleClose, handleShow } = useHomeProjects({ style });
 
 	return (
-		<section
+		<section className="sec-padding pb-0"
 			ref={main}
 			id={id}
 		>
-			<div className={`flex-column text-center d-flex w-100 pt-lg-5 ${style.title_wrap}`}>
-				<p>Curated works</p>
-				<h2 className={`h2 ${style.title}`}>Recently featured works</h2>
+			<div className={`flex-column text-center d-flex w-100 ${style.title_wrap}`}>
+				<p className="text-white opacity-75 mb-0">Curated works</p>
+				<h2 className={`h1 ${style.title}`}>Featured works</h2>
 			</div>
 
 			{width < 991 ?
@@ -58,9 +58,14 @@ const HomeProjects = ({ id }) => {
 							{data?.slice(0, 6)?.map((item, index) => {
 								return (
 									<div className={`${style.content}`} key={index}>
-										<h5 className="text-primary h5 mb-2">What we offer</h5>
+										
+										
 										<h2 className="h2 mb-lg-4 text-white fw-300">{item?.title}</h2>
 										<div className="dynamic-content text-grey" dangerouslySetInnerHTML={{ __html: `${item?.description}` }}></div>
+										<div className="mt-4">
+											<div className="d-inline-block px-2 rounded-pill py-1 border border-grey text-white fw-500 title-sm mb-2 me-2">UI Development</div>
+											<div className="d-inline-block px-2 rounded-pill py-1 border border-grey text-white fw-500 title-sm mb-2 me-2">Frontend Development</div>
+										</div>
 									</div>
 								)
 							})}
@@ -68,18 +73,12 @@ const HomeProjects = ({ id }) => {
 						<div className={`${style.col_right} `}>
 							<div className={`${style.card} mb-4 mb-lg-0 ratio`}>
 								{data?.slice(0, 6)?.map((item, index) => (
-									<div className={`${style.card_img1}`} key={index}>
-										<div className={`${style.card_img1_img} `}>
+									<div className={`${style.card_img1} overflow-hidden`} key={index}>
+										<div className={`${style.card_img1_img} overflow-hidden`}>
 											<div className="position-absolute top-0 start-0 w-100 h-100">
-												<Image src={`${item?.cover?.url}`} className="object-fit-contain" fill alt={item?.cover?.alt} />
+												<Image src={`${item?.cover?.url}`} className="object-fit-cover" fill alt={item?.cover?.alt} />
 											</div>
-											{item?.icons?.map((item_sub, i) => {
-												return (
-													<div key={i} className={`${style.item} ratio`} style={{ '--top': `${item_sub?.position?.top}`, '--left': `${item_sub?.position?.left}`, '--width': `${item_sub?.size?.width}`, '--bs-aspect-ratio': `${item_sub?.size?.ratio}` }}>
-														<Image src={`${item_sub?.img?.url}`} className="object-fit-contain" fill alt={item_sub?.img?.alt} />
-													</div>
-												)
-											})}
+											
 										</div>
 									</div>
 								))}
@@ -153,182 +152,50 @@ export default HomeProjects;
 const data = [
 	{
 		title: "Wac.co",
-		description: "<ul><li>Expert-led online tutoring sessions.</li><li>Interactive learning experiences tailored to individual needs.</li><li>Flexible scheduling for convenience.</li></ul>",
+		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/s1.png",
+			url: "/assets/images/w1.jpeg",
 			alt: ""
 		},
-		icons: [
-			{
-				img: {
-					url: "/assets/images/cards/card1.png",
-					alt: "",
-				},
-				size: {
-					width: "25%",
-					ratio: "112.3%",
-				},
-				position: {
-					top: "2%",
-					left: "45%"
-				}
-			}, {
-				img: {
-					url: "/assets/images/cards/card2.png",
-					alt: "",
-				},
-				size: {
-					width: "25%",
-					ratio: "112.3%",
-				},
-				position: {
-					top: "33%",
-					left: "70%"
-				}
-			},
-
-		]
+		
 	}, {
 		title: "Education Techplus",
-		description: "<ul><li>Vast library of educational resources spanning various subjects and levels.</li><li>Textbooks, e-books, multimedia content, and interactive modules.</li><li>Regularly updated content to align with curriculum changes.</li></ul>",
+		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/s2.png",
+			url: "/assets/images/w2.jpeg",
 			alt: ""
 		},
-		icons: [
-			{
-				img: {
-					url: "/assets/images/cards/card3.png",
-					alt: "",
-				},
-				size: {
-					width: "25%",
-					ratio: "112.3%",
-				},
-				position: {
-					top: "2%",
-					left: "45%"
-				}
-			}, {
-				img: {
-					url: "/assets/images/cards/card4.png",
-					alt: "",
-				},
-				size: {
-					width: "25%",
-					ratio: "112.3%",
-				},
-				position: {
-					top: "33%",
-					left: "70%"
-				}
-			},
-
-		]
+	
 	}, {
 		title: "MDX",
-		description: "<ul><li>Personalized one-on-one sessions with experienced tutors.</li><li>Customized learning plans to address specific learning goals.</li><li>Progress tracking and feedback for continuous improvement.</li></ul>",
+		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/s3.png",
+			url: "/assets/images/w1.jpeg",
 			alt: ""
 		},
-		icons: [
-			{
-				img: {
-					url: "/assets/images/cards/card5.png",
-					alt: "",
-				},
-				size: {
-					width: "78%",
-					ratio: "30%",
-				},
-				position: {
-					top: "70%",
-					left: "15%"
-				}
-			},
-
-		]
+		
 	}, {
 		title: "Symphony",
-		description: "<ul><li>Cutting-edge learning management systems (LMS).</li><li>Interactive and gamified learning modules.</li><li>Integration of emerging technologies like AI and AR for enhanced engagement.</li></ul>",
+		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/s4.png",
+			url: "/assets/images/w1.jpeg",
 			alt: ""
 		},
-		icons: [
-			{
-				img: {
-					url: "/assets/images/cards/card6.png",
-					alt: "",
-				},
-				size: {
-					width: "35%",
-					ratio: "18%",
-				},
-				position: {
-					top: "85%",
-					left: "5%"
-				}
-			}, {
-				img: {
-					url: "/assets/images/cards/card7.png",
-					alt: "",
-				},
-				size: {
-					width: "60%",
-					ratio: "30%",
-				},
-				position: {
-					top: "70%",
-					left: "50%"
-				}
-			},
-
-		]
+		
 	},
 	{
 		title: "Greenmeat",
-		description: "<ul> <li>Platforms that facilitate collaboration among educators.</li><li>Shared resources, lesson planning, and collaborative projects.</li><li>Professional development opportunities.</li></ul>",
+		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/s5.png",
+			url: "/assets/images/w1.jpeg",
 			alt: ""
 		},
-		icons: [
-			{
-				img: {
-					url: "/assets/images/cards/card6.png",
-					alt: "",
-				},
-				size: {
-					width: "35%",
-					ratio: "18%",
-				},
-				position: {
-					top: "85%",
-					left: "5%"
-				}
-			}, {
-				img: {
-					url: "/assets/images/cards/card7.png",
-					alt: "",
-				},
-				size: {
-					width: "60%",
-					ratio: "30%",
-				},
-				position: {
-					top: "70%",
-					left: "50%"
-				}
-			},
-
-		]
+		
 	}, {
 		title: "jerseygroup.com",
-		description: "<ul><li>AI-powered adaptive learning platforms.</li><li>Personalized learning paths based on individual progress.</li><li>Continuous assessment and feedback mechanisms.</li></ul>",
+		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/s6.png",
+			url: "/assets/images/w2.jpeg",
 			alt: ""
 		},
 

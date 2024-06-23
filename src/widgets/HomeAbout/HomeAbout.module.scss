@@ -75,6 +75,18 @@
  }
 
 
- .star {
-    width: 90px;
+ .title_sm {
+    line-height: 1.3;
+    color: rgb(177, 182, 203);
+ }
+
+ .strip {
+    background-image: linear-gradient(to right, #9902f7, #009dff);
+    padding: 44px 0;
+ }
+
+ .shapes {
+    --bs-aspect-ratio: 57%;
+    width: 62%;
+    transform: translate(-50%, -50%);
  }

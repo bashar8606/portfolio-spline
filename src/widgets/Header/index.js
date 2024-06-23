@@ -48,9 +48,9 @@ function Header() {
                             <Offcanvas.Body>
                                 <Nav className="mx-auto  py-lg-2 px-lg-2 align-items-xl-center h-100">
                                     <Link href="/" className='nav-link active'>Home</Link>
-                                    <Link href="/products" className='nav-link'>Club</Link>
-                                    <Link href="/products" className='nav-link'>International</Link>
-                                    <Link href="/" className='nav-link'>About</Link>
+                                    <Link href="/products" className='nav-link'>About me</Link>
+                                    <Link href="/products" className='nav-link'>Works</Link>
+                                    <Link href="/" className='nav-link'>Blogs</Link>
                                     <Link href="/" className='btn btn-primary w-100 d-xl-none mt-auto'>Contact us</Link>
                                     {/* <NavDropdown
                                     title="Dropdown"

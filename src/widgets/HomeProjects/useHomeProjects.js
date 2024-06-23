@@ -48,7 +48,6 @@ const useHomeProjects = ({ style }) => {
         "(min-width: 992px)": function () {
 
           const section = self.selector(`.${style.section}`);
-          const title_wrap = self.selector(`.${style.title_wrap}`);
           const title = self.selector(`.${style.title}`);
           const btn_wrap = self.selector(`.${style.view}`);
           const btn = self.selector(`.${style.view_btn}`);
@@ -74,23 +73,7 @@ const useHomeProjects = ({ style }) => {
           tl2.from(btn_icon, { duration: 1, scale: 0.8, ease: Elastic.easeInOut, }, "<");
           tl2.from(btn_text, { duration: 0.8, width: 0, padding: 0, ease: Expo.easeInOut }, "<.5");
           
-          gsap.set(title, { autoAlpha: 0, letterSpacing:"40px", });
-          gsap.to(title, { scrollTrigger: { trigger: title, scrub: true}, letterSpacing:"5px", autoAlpha: 1, ease: Expo.easeOut, duration: .8 })
-
-          const tl1 = gsap.timeline({
-            scrollTrigger: {
-              trigger: main.current,
-              end: "bottom bottom",
-              start: "top top",
-              scrub: 0.8,
-              pin: title_wrap,
-              pinSpacing: false,
-              anticipatePin: 1,
-            },
-          });
-
-
-
+    
 
           const tl = gsap.timeline({
             scrollTrigger: {
