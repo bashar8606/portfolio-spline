@@ -5,7 +5,7 @@ import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 function Footer() {
     return (
         <footer className={`${style.footer} bg-black`}>
-            <div className={style.footer_top}>
+            {/* <div className={style.footer_top}>
                 <div className="container">
                     <div className="row row-cols-lg-3 gy-3">
                         <div className={style.footer_col}>
@@ -155,16 +155,16 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className={style.footer_credit}>
                 <div className="container">
                     <div className="row ff-secondary">
                         <div className="col-lg">
-                            <p className='mb-lg-0 fw-500'>Copyright © 2023 AUTOMATRO all right reserved</p>
+                            <p className='mb-lg-0 fw-500'>Copyright © 2023 all right reserved</p>
                         </div>
                         <div className="col-lg text-lg-center">
-                            <p className='mb-lg-0 fw-500'>Design & Developed By :  <a href="#" target='_blank'>Voizzit</a></p>
+                            <p className='mb-lg-0 fw-500'>Design & Developed By :  <a href="#" target='_blank'>Bashar</a></p>
                         </div>
                         <div className="col-lg text-lg-end"></div>
                     </div>
