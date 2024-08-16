@@ -90,3 +90,37 @@
     width: 62%;
     transform: translate(-50%, -50%);
  }
+
+
+ .pointer {
+    --primary : #3A87F7;
+    --bx:rgba(59, 134, 246, 0.53);
+    --t: 10%;
+    --l: 10%;
+    top: var(--t);
+    left: var(--l);
+    
+    &_pill {
+background-color: var(--primary);
+box-shadow: 0 0 14px 0 var(--bx);
+    }
+
+    &_primary {
+        --primary : #3A87F7;
+        --bx:rgba(59, 134, 246, 0.53);
+        --t: -20%;
+        --l: 10%;
+    }
+    &_secondary {
+        --primary : #EA6635;
+        --bx:rgba(234, 101, 53, 0.47);
+        --t: 60%;
+        --l: 70%;
+    }
+    &_tertiary {
+        --primary : #861AF5;
+        --bx:rgba(136, 26, 245, 0.538);
+        --t: 110%;
+        --l: 10%;
+    }
+ }
