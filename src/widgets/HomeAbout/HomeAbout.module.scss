@@ -31,9 +31,10 @@
     --bs-aspect-ratio: 115.3%;
     left: 50%;
     transform: translateX(-50%);
-    width: 30%;
+    width: 35%;
     bottom: 0;
     z-index: 3;
+    will-change: transform;
     &::after {
         // content: '';
         position: absolute;
@@ -108,8 +109,8 @@ box-shadow: 0 0 14px 0 var(--bx);
     &_primary {
         --primary : #3A87F7;
         --bx:rgba(59, 134, 246, 0.53);
-        --t: -20%;
-        --l: 10%;
+        --t: 0%;
+        --l: 70%;
     }
     &_secondary {
         --primary : #EA6635;
@@ -120,7 +121,11 @@ box-shadow: 0 0 14px 0 var(--bx);
     &_tertiary {
         --primary : #861AF5;
         --bx:rgba(136, 26, 245, 0.538);
-        --t: 110%;
-        --l: 10%;
+        --t: 30%;
+        --l: -6%;
     }
+ }
+
+ .content_wrap {
+    will-change: transform;
  }

@@ -33,10 +33,23 @@ const HomeAbout = ({ data }) => {
           className="object-fit-cover"
           alt="logo icon"
         />
+        <div>
+        <div className={`position-absolute ${style.pointer} ${style.pointer_primary}`}>
+              <div className={`${style.pointer_pill} title-sm fw-600 px-3 py-1 text-white rounded-pill text-nowrap`}>UI/UX Design</div>
+            </div>
+
+            <div className={`position-absolute ${style.pointer} ${style.pointer_secondary}`}>
+              <div className={`${style.pointer_pill} title-sm fw-600 px-3 py-1 text-white rounded-pill text-nowrap`}>Development</div>
+            </div>
+
+            <div className={`position-absolute ${style.pointer} ${style.pointer_tertiary}`}>
+              <div className={`${style.pointer_pill} title-sm fw-600 px-3 py-1 text-white rounded-pill text-nowrap`}>Motion Design</div>
+            </div>
+        </div>
       </div>
-      <div className="container">
-        <div className="row ">
-          <div className="col-lg-7">
+      <div className="container h-100 d-flex flex-column">
+        <div className="row mt-auto">
+          <div className={`col-lg-7 ${style.content_wrap}`}>
             <h2 className="h2 fw-700">Hi, I&apos;m Bashar — Developer</h2>
            
             <h3 className={`fw-600 h3 mb-lg-4  ${style.title_sm}`}>
@@ -48,19 +61,16 @@ const HomeAbout = ({ data }) => {
           </div>
 
           <div className="col-lg-5 position-relative">
-            <div className={`position-absolute ${style.pointer} ${style.pointer_primary}`}>
-              <div className={`${style.pointer_pill} title-sm fw-600 px-2 py-1 text-white rounded-pill text-nowrap`}>Bashar Ahmed</div>
-            </div>
-
-            <div className={`position-absolute ${style.pointer} ${style.pointer_secondary}`}>
-              <div className={`${style.pointer_pill} title-sm fw-600 px-2 py-1 text-white rounded-pill text-nowrap`}>Bashar Ahmed</div>
-            </div>
-
-            <div className={`position-absolute ${style.pointer} ${style.pointer_tertiary}`}>
-              <div className={`${style.pointer_pill} title-sm fw-600 px-2 py-1 text-white rounded-pill text-nowrap`}>Bashar Ahmed</div>
-            </div>
+          
           </div>
         </div>
+        <ul className="mt-auto d-flex">
+          <li>  <a href="">Behance</a></li>
+          <li>  <a href="">Spline</a></li>
+          <li>  <a href="">Linkedin</a></li>
+          <li>  <a href="">Dribbble</a></li>
+          <li>  <a href="">Instagram</a></li>
+        </ul>
       </div>
     </section>
 <div className={`${style.strip}`}></div>
