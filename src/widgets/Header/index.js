@@ -39,11 +39,7 @@ function Header() {
                             placement="start"
                         >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
-                                    <div className={`${style.logo} ratio `}>
-                                        <Image src={`/assets/images/logo.svg`} fill alt="logo icon" />
-                                    </div>
-                                </Offcanvas.Title>
+                             
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="mx-auto  py-lg-2 px-lg-2 align-items-xl-center h-100">

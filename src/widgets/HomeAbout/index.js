@@ -14,7 +14,7 @@ const HomeAbout = ({ data }) => {
   return (
     <>
       <section
-        className={`${style.section} sec-padding d-flex align-items-center  `}
+        className={`${style.section} flex-column sec-padding d-flex align-items-center  `}
         ref={main}
       >
         {/* <div className={`ratio ratio-1x1 ${style.grad}`}></div> */}
@@ -30,7 +30,7 @@ const HomeAbout = ({ data }) => {
 
 
 
-        <div className={`ratio ${style.portrait} `}>
+        <div className={`ratio ${style.portrait} mb-3 mb-lg-0`}>
           <Image
             src={`/assets/images/portrait.png`}
             fill
@@ -53,10 +53,10 @@ const HomeAbout = ({ data }) => {
         </div>
         <div className="container h-100 d-flex flex-column">
           <div className="row mt-auto">
-            <div className={`col-lg-7 ${style.content_wrap}`}>
-              <h2 className="h2 fw-700">Hi, I&apos;m Bashar — Developer</h2>
+            <div className={`col-lg-7 ${style.content_wrap} mb-5 mb-lg-0`}>
+              <h2 className="h2 fw-700 mb-2">Hi, I&apos;m Bashar — Developer</h2>
 
-              <h3 className={`fw-600 h3 mb-lg-4  ${style.title_sm}`}>
+              <h3 className={`fw-600 h3 mb-3 mb-lg-4  ${style.title_sm}`}>
                 I enjoy creating products from scratch and improve existing ones.
                 In simple terms, I design websites that make a profit or enhance
                 business.
@@ -92,7 +92,7 @@ const HomeAbout = ({ data }) => {
               </span>
               Instagram</a></li> */}
             <li className="me-3">
-              <a href="https://www.behance.net/ahammedbashar" className="d-inline-flex align-items-center lh-1 title-sm">
+              <a href="https://www.behance.net/ahammedbashar" className="d-inline-flex align-items-center lh-1 title-sm" target="_blank">
                 <span className="me-2" style={{ color: "#1772FA" }}>
                   <FaBehance />
                 </span>
@@ -100,7 +100,7 @@ const HomeAbout = ({ data }) => {
           </ul>
         </div>
       </section>
-      <div className={`${style.strip}`}></div>
+     
     </>
   );
 };

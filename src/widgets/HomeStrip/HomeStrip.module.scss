@@ -1,0 +1,31 @@
+@import '../../style/variable.scss';
+
+
+ .strip {
+    background-image: linear-gradient(to right, #9902f7, #009dff);
+    padding: 25px 0;
+    @include lg {
+        padding: 44px 0;
+
+    }
+}
+.item_wrap {
+     will-change: transform;
+
+ }
+
+ .item {
+    .icon {
+        width: 30px;
+        @include lg {
+            width: 40px;
+        }
+    }
+    p{
+        font-size: 18px;
+        @include lg {
+            font-size: 28px;
+
+        }
+    }
+ }

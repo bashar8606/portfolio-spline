@@ -7,12 +7,15 @@
     --t-white: #fff;
     --t-dark: #525252;
     position: relative;
-    min-height: 100vh;
     background-color: var(--bg);
     // background-image:radial-gradient(rgb(0, 246, 131), rgb(50, 249, 210))  ;
     color: var(--color);
-    clip-path: circle(45px);
+    
     overflow: hidden;
+    @include lg {
+        min-height: 100vh;
+        clip-path: circle(45px);
+    }
 }
 .title_wrap {
     position: absolute;
@@ -27,14 +30,17 @@
 }
 
 .portrait {
-    position: absolute;
     --bs-aspect-ratio: 115.3%;
-    left: 50%;
-    transform: translateX(-50%);
     width: 35%;
     bottom: 0;
     z-index: 3;
     will-change: transform;
+    min-width: 290px;
+    @include lg {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
     &::after {
         // content: '';
         position: absolute;
