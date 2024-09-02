@@ -44,10 +44,10 @@ function Header() {
                             <Offcanvas.Body>
                                 <Nav className="mx-auto  py-lg-2 px-lg-2 align-items-xl-center h-100">
                                     <Link href="/" className='nav-link active'>Home</Link>
-                                    <Link href="/products" className='nav-link'>About me</Link>
-                                    <Link href="/products" className='nav-link'>Works</Link>
+                                    <Link href="/" className='nav-link'>About me</Link>
+                                    <Link href="/" className='nav-link'>Works</Link>
                                     <Link href="/" className='nav-link'>Blogs</Link>
-                                    <Link href="/" className='btn btn-primary w-100 d-xl-none mt-auto'>Contact us</Link>
+                                    <a href={'tel:+971545085635'} className='btn btn-primary w-100 d-xl-none mt-auto'>Contact me</a>
                                     {/* <NavDropdown
                                     title="Dropdown"
                                     id={`offcanvasNavbarDropdown-expand-xl`}
@@ -60,7 +60,7 @@ function Header() {
                         </Navbar.Offcanvas>
 
                         <Nav className={`${style.toolbar} flex-row ms-auto ms-xl-0 align-items-center`}>
-                            <Link href={'/login'} className="btn btn-sm btn-white d-none d-lg-inline-block">Connect me</Link>
+                            <a href={'tel:+971545085635'} className="btn btn-sm btn-white d-none d-lg-inline-block">Connect me</a>
                         </Nav>
 
                     </Container>
