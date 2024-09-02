@@ -129,3 +129,15 @@ box-shadow: 0 0 14px 0 var(--bx);
  .content_wrap {
     will-change: transform;
  }
+
+ .social {
+     li {
+        will-change: transform;
+    }
+    a {
+        color: #000;
+        span {
+            font-size: 20px;
+        }
+    }
+ }

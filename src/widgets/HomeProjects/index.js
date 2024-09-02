@@ -76,7 +76,7 @@ const HomeProjects = ({ id }) => {
 									<div className={`${style.card_img1} overflow-hidden`} key={index}>
 										<div className={`${style.card_img1_img} overflow-hidden`}>
 											<div className="position-absolute top-0 start-0 w-100 h-100">
-												<Image src={`${item?.cover?.url}`} className="object-fit-cover" fill alt={item?.cover?.alt} />
+												<Image src={`${item?.cover?.url}`} sizes="50vw" quality={90} className="object-fit-cover" fill alt={item?.cover?.alt} />
 											</div>
 											
 										</div>
@@ -86,14 +86,14 @@ const HomeProjects = ({ id }) => {
 						</div>
 					</div>
 				</div>
-				{width >= 991 ?
+				{/* {width >= 991 ?
 					<div className={`${style.view} text-center`}>
 						<button className={`${style.view_btn} rounded-pill row gx-2`} onClick={handleShow}>
 							<span className={`${style.view_btn_text} col`}>
 								Explore more works
 							</span>
 							<span className={`col-auto ${style.view_btn_icon}`}>+</span></button>
-					</div> : ""}
+					</div> : ""} */}
 
 			</div>
 
@@ -154,31 +154,23 @@ const data = [
 		title: "Wac.co",
 		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/w1.jpeg",
+			url: "/assets/images/wac_moc.png",
 			alt: ""
 		},
 		
-	}, {
-		title: "Education Techplus",
-		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
-		cover: {
-			url: "/assets/images/w2.jpeg",
-			alt: ""
-		},
-	
 	}, {
 		title: "MDX",
 		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/w1.jpeg",
+			url: "/assets/images/mdx_moc.png",
 			alt: ""
 		},
 		
 	}, {
-		title: "Symphony",
+		title: "3d Presentation of apple using spline",
 		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
-			url: "/assets/images/w1.jpeg",
+			url: "/assets/images/airpod_moc.png",
 			alt: ""
 		},
 		

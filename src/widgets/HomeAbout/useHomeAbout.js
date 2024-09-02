@@ -12,6 +12,7 @@ export const useHomeAbout = ({ style }) => {
       const portrait = self.selector(`.${style.portrait}`);
       const content_wrap = self.selector(`.${style.content_wrap}`);
       const pointer = self.selector(`.${style.pointer}`);
+      const social = self.selector(`.${style.social} li`);
       ScrollTrigger.matchMedia({
         "(min-width: 992px)": function () {
 
@@ -21,6 +22,7 @@ export const useHomeAbout = ({ style }) => {
           gsap.set(pointer[0],{xPercent: 100,yPercent: -300})
           gsap.set(pointer[1],{xPercent: 100,yPercent: 20})
           gsap.set(pointer[2],{xPercent: -100})
+          gsap.set(social,{x: 50, autoAlpha: 0})
 
           const tl = gsap.timeline({
             scrollTrigger: {
@@ -38,6 +40,7 @@ export const useHomeAbout = ({ style }) => {
           tl.to(pointer, {xPercent: 0, yPercent: 0},"<")
           tl.to(content_wrap, {autoAlpha: 1, xPercent: 0})
           tl.to(portrait, {xPercent: 30},"<")
+          tl.to(social, {x: 0,autoAlpha:1,  stagger: 0.05},"<")
 
 
         },
