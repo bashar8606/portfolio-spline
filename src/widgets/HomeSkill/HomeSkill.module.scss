@@ -9,7 +9,7 @@
 }
 
 .section {
-  background-color: #fbfbfb;
+  background-color: #000000;
 }
 
 .title_wrap {
@@ -63,4 +63,11 @@
             &:nth-of-type(5) {grid-area: 2 / 2 / 3 / 4;}
         }
       
+}
+
+.data_wrap{
+  --bs-gutter-y: 40px;
+  @include lg {
+    --bs-gutter-y: 60px;
+  }
 }
