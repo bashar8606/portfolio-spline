@@ -6,6 +6,8 @@ import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 import { Modal } from "react-bootstrap";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
+
 
 const HomeProjects = ({ id }) => {
 	const { main, customSettings, customSettings1, width, show, handleClose, handleShow } = useHomeProjects({ style });
@@ -58,14 +60,21 @@ const HomeProjects = ({ id }) => {
 							{data?.slice(0, 6)?.map((item, index) => {
 								return (
 									<div className={`${style.content}`} key={index}>
-										
+										<div className="mb-2">
+											{item?.tags?.map((tag,i)=>{
+												return(
+												<div key={i} className="d-inline-block px-2 rounded-pill py-1 border border-grey text-white fw-500 title-sm mb-2 me-2">{tag}</div>
+												)
+											})}
+											
+										</div>
 										
 										<h2 className="h2 mb-lg-4 text-white fw-300">{item?.title}</h2>
-										<div className="dynamic-content text-grey" dangerouslySetInnerHTML={{ __html: `${item?.description}` }}></div>
-										<div className="mt-4">
-											<div className="d-inline-block px-2 rounded-pill py-1 border border-grey text-white fw-500 title-sm mb-2 me-2">UI Development</div>
-											<div className="d-inline-block px-2 rounded-pill py-1 border border-grey text-white fw-500 title-sm mb-2 me-2">Frontend Development</div>
-										</div>
+										<div className="dynamic-content text-grey mb-3" dangerouslySetInnerHTML={{ __html: `${item?.description}` }}></div>
+										<a href={item?.link} target="_blank" className={`${style.btn} d-inline-flex align-items-center text-white`}>View project <span className="ms-2 rounded-pill d-flex align-items-center justify-content-center">
+							
+										<HiOutlineArrowUpRight />
+											</span></a>
 									</div>
 								)
 							})}
@@ -157,14 +166,28 @@ const data = [
 			url: "/assets/images/wac_moc.png",
 			alt: ""
 		},
+		link:"https://wac.co/",
+		tags:["Frontend Development", "Next js","GSAP"]
 		
 	}, {
+		title: "Airretailer",
+		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
+		cover: {
+			url: "/assets/images/wac_moc.png",
+			alt: ""
+		},
+		link:"https://new.airretailer.com",
+		tags:["Frontend","CMS-Backend","Strapi", "Next js","GSAP"]
+		
+	},{
 		title: "MDX",
 		description: "<p>Personalized one-on-one sessions with experienced tutors. Customized learning plans to address specific learning goals.</p>",
 		cover: {
 			url: "/assets/images/mdx_moc.png",
 			alt: ""
 		},
+		link:"https://mdx.ac.ae/",
+		tags:["Frontend Development", "Next js","GSAP"]
 		
 	}, {
 		title: "3d Presentation of apple using spline",
@@ -173,6 +196,8 @@ const data = [
 			url: "/assets/images/airpod_moc.png",
 			alt: ""
 		},
+		link:"https://dribbble.com/shots/24630872-Airpod-products-intro-using-3d-Spline",
+		tags:["3d Render", "Spline"]
 		
 	},
 	{
@@ -182,6 +207,8 @@ const data = [
 			url: "/assets/images/w1.jpeg",
 			alt: ""
 		},
+		link:"https://www.thegreenmeat.com/",
+		tags:["Frontend Development", "React js","GSAP"]
 		
 	}, {
 		title: "jerseygroup.com",
@@ -190,5 +217,7 @@ const data = [
 			url: "/assets/images/w2.jpeg",
 			alt: ""
 		},
+		link:"https://jerseygroup.com/",
+		tags:["Frontend Development", "React js","GSAP"]
 
 	},]

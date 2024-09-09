@@ -61,7 +61,7 @@ const HomeAbout = ({ data }) => {
                 In simple terms, I design websites that make a profit or enhance
                 business.
               </h3>
-              <Link href="" className="btn btn-secondary">Download CV</Link>
+              <a href="/assets/images/Resume-Bashar-Developer.pdf" target="_blank" className="btn btn-secondary">Download CV</a>
             </div>
 
             <div className="col-lg-5 position-relative">

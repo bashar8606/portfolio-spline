@@ -9,8 +9,11 @@
 }
 
 .section {
-  min-height: 100vh;
-  background-color: #fbfbfb;
+  background-color: #000000;
+}
+
+.title_wrap {
+  margin-bottom: 90px;
 }
 
 .card {
@@ -60,4 +63,11 @@
             &:nth-of-type(5) {grid-area: 2 / 2 / 3 / 4;}
         }
       
+}
+
+.data_wrap{
+  --bs-gutter-y: 40px;
+  @include lg {
+    --bs-gutter-y: 60px;
+  }
 }

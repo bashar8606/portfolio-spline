@@ -306,3 +306,11 @@ will-change: transform;
         will-change: transform;
     }
 }
+
+.btn {
+    span {
+        width: 34px;
+        height: 34px;
+        background: linear-gradient(89deg, #0066FF 0%, #FFDDB7 100%)
+    }
+}

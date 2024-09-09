@@ -17,7 +17,7 @@ const HomeStrip = ({ data }) => {
         <div className={`row flex-nowrap gx-lg-5 ${style.item_wrap}`}>
           {datas?.map((item, i) => {
             return (
-              <div className={`${style.item} col-auto d-flex align-items-center`}>
+              <div key={i} className={`${style.item} col-auto d-flex align-items-center`}>
                 <div className={style.icon}>
                   <div className="ratio ratio-1x1">
                     <Image
