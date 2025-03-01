@@ -163,10 +163,9 @@ function Footer() {
                         <div className="col-lg">
                             <p className='mb-lg-0 fw-500'>Copyright © 2023 all right reserved</p>
                         </div>
-                        <div className="col-lg text-lg-center">
+                        <div className="col-lg text-lg-end">
                             <p className='mb-lg-0 fw-500'>Design & Developed By :  <a href="#" target='_blank'>Bashar</a></p>
                         </div>
-                        <div className="col-lg text-lg-end"></div>
                     </div>
                 </div>
             </div>

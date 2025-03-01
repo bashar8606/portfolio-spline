@@ -32,7 +32,7 @@ const HomeAbout = ({ data }) => {
 
         <div className={`ratio ${style.portrait} mb-3 mb-lg-0`}>
           <Image
-            src={`/assets/images/portrait.png`}
+            src={`/assets/images/portrait2.png`}
             fill
             className="object-fit-cover"
             alt="logo icon"
