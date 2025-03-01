@@ -3,7 +3,6 @@ import Header from "@/widgets/Header";
 import Footer from '@/widgets/Footer';
 import '../style/global.scss';
 import GlobalProviders from '@/components/GlobalProviders';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const fontPrimary = DM_Sans({
   subsets: ['latin'],
@@ -27,7 +26,6 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </GlobalProviders>
-          <SpeedInsights/>
       </body>
     </html>
   )
