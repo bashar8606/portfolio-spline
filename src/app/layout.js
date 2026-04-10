@@ -1,4 +1,5 @@
 import { Red_Hat_Display , DM_Sans } from 'next/font/google';
+import Script from 'next/script';
 import Header from "@/widgets/Header";
 import Footer from '@/widgets/Footer';
 import '../style/global.scss';
@@ -20,6 +21,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-M4YJ9N2XYJ`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M4YJ9N2XYJ');
+          `}
+        </Script>
+      </head>
       <body className={fontPrimary.className} style={{'--ff-primary' : fontPrimary.variable}}>
         <GlobalProviders>
           <Header />

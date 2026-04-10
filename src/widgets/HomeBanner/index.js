@@ -2,12 +2,18 @@
 import Image from "next/image";
 import style from "./HomeBanner.module.scss";
 import { useHomeBanner } from "./useHomeBanner";
+import Spline from '@splinetool/react-spline/next';
 
 const HomeBanner = ({ data }) => {
 	const { main } = useHomeBanner({ style });
 
 	return (
 		<section ref={main} className={`${style.section} sec-padding d-flex flex-column justify-content-between  bg-secondary`} >
+
+      <Spline
+        scene="https://prod.spline.design/i2Pbh3DEGQP2Crnt/scene.splinecode" 
+      />
+
 			<div className="container">
 
 				<h1 className="text-center h4 text-white fw-400 lh-1">I’m Bashar, I transform every</h1>
