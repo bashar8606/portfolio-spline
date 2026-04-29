@@ -61,7 +61,7 @@ const HomeAbout = ({ data }) => {
                 In simple terms, I design websites that make a profit or enhance
                 business.
               </h3>
-              <a href="/assets/images/Resume-Bashar-Developer.pdf" target="_blank" className="btn btn-secondary">Download CV</a>
+              <a href="/assets/images/resume-ahammed-bhashar-frontend.pdf" target="_blank" className="btn btn-secondary">Download CV</a>
             </div>
 
             <div className="col-lg-5 position-relative">
@@ -71,10 +71,10 @@ const HomeAbout = ({ data }) => {
           <ul className={`mt-auto d-flex ${style.social}`}>
 
             <li className="me-3"><a href="https://app.spline.design/@ahammed.bashar9" target="_blank" className="d-inline-flex align-items-center lh-1 title-sm">
-            <span className="me-2 d-inline-block" style={{width: '25px'}}>
-              <div className="ratio ratio-1x1">
-                <Image src="/assets/images/skills/icon2.png" fill className="object-fit-cover" alt=""/>
-              </div>
+              <span className="me-2 d-inline-block" style={{ width: '25px' }}>
+                <div className="ratio ratio-1x1">
+                  <Image src="/assets/images/skills/icon2.png" fill className="object-fit-cover" alt="" />
+                </div>
               </span> Spline</a></li>
             <li className="me-3">    <a href="https://www.linkedin.com/in/ahammed-bashar/" target="_blank" className="d-inline-flex align-items-center lh-1 title-sm">
               <span className="me-2" style={{ color: "#132BFF" }}>
@@ -100,7 +100,7 @@ const HomeAbout = ({ data }) => {
           </ul>
         </div>
       </section>
-     
+
     </>
   );
 };

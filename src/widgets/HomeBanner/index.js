@@ -2,7 +2,8 @@
 import Image from "next/image";
 import style from "./HomeBanner.module.scss";
 import { useHomeBanner } from "./useHomeBanner";
-import Spline from '@splinetool/react-spline/next';
+import dynamic from 'next/dynamic';
+// const Spline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
 
 const HomeBanner = ({ data }) => {
 	const { main } = useHomeBanner({ style });
@@ -10,9 +11,9 @@ const HomeBanner = ({ data }) => {
 	return (
 		<section ref={main} className={`${style.section} sec-padding d-flex flex-column justify-content-between  bg-secondary`} >
 
-      <Spline
+			{/* <Spline
         scene="https://prod.spline.design/i2Pbh3DEGQP2Crnt/scene.splinecode" 
-      />
+      /> */}
 
 			<div className="container">
 
@@ -33,7 +34,7 @@ const HomeBanner = ({ data }) => {
 						<div className={`${style.line_round} rounded-circle bg-white position-absolute z-3  start-50 top-50`}></div>
 					</div>
 					<div className={style.line_path}>
-					<Image src={`/assets/images/lines.svg`} fill className="object-fit-cover" alt="logo icon" />
+						<Image src={`/assets/images/lines.svg`} fill className="object-fit-cover" alt="logo icon" />
 					</div>
 				</div>
 			</div>

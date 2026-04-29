@@ -1,5 +1,6 @@
 import HomeAbout from '@/widgets/HomeAbout'
 import HomeBanner from '@/widgets/HomeBanner'
+import HomeCompanies from '@/widgets/HomeCompanies'
 import HomeProjects from '@/widgets/HomeProjects'
 import HomeSkill from '@/widgets/HomeSkill'
 import HomeStrip from '@/widgets/HomeStrip'
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeStrip/>
       <HomeProjects data={aboutData}/>
       <HomeSkill/>
+      <HomeCompanies/>
     </main>
   )
 }

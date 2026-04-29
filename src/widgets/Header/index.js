@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { FiSearch, FiBookmark } from "react-icons/fi";
+import { FiSearch, FiBookmark, FiPhone, FiMail } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 import { CartItems } from "@/recoil/atoms";
@@ -59,7 +59,13 @@ function Header() {
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
 
-                        <Nav className={`${style.toolbar} flex-row ms-auto ms-xl-0 align-items-center`}>
+                        <Nav className={`${style.toolbar} flex-row ms-auto ms-xl-0 align-items-center gap-2`}>
+                            <a href="tel:+971545085635" title="+971 54 508 5635" className={`${style.icon_btn} d-none d-lg-flex`}>
+                                <FiPhone />
+                            </a>
+                            <a href="mailto:ahammed.bashar9@gmail.com" title="ahammed.bashar9@gmail.com" className={`${style.icon_btn} d-none d-lg-flex`}>
+                                <FiMail />
+                            </a>
                             <a href={'tel:+971545085635'} className="btn btn-sm btn-white d-none d-lg-inline-block">Connect me</a>
                         </Nav>
 
